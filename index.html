@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <form id="form" onsubmit="data.insert(); return false">
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <input type="text" id="lastname" placeholder="Enter Lastname">
+        </div>
+        <div class="form-group">
+            <input type="text" id="age" placeholder="Enter Age">
+        </div>
+
+        <div class="form-group">
+            <select id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button>Add</button>
+        </div>
+    </form>
+
+    <div id="error-msg"></div>
+
+
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
