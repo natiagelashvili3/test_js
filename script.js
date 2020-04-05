@@ -29,7 +29,6 @@ var data = {
             <td>`+ this.lastname +`</td>
             <td>`+ this.age +`</td>
             <td>`+ this.gender +`</td>
-            <td class="action"><span>Delete</span></td>
         `;
 
         var tdElement = document.createElement('td');
@@ -44,9 +43,8 @@ var data = {
 
         trElement.appendChild(tdElement);
 
-        document.getElementById('table').appendChild(trElement);
+        document.getElementById('table-body').appendChild(trElement);
         
-        this.setAction();
         this.clearForm();
 
     },
